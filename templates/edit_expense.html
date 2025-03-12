@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Expense - Finance Tracker</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Edit Expense</h2>
+        <form>
+            <label for="date">Date:</label>
+            <input type="date" id="date" value="2025-03-01" required>
+
+            <label for="category">Category:</label>
+            <select id="category" required>
+                <option>Housing</option>
+                <option selected>Food & Groceries</option>
+                <option>Transportation</option>
+                <option>Health & Wellness</option>
+                <option>Entertainment & Leisure</option>
+                <option>Debt & Loans</option>
+                <option>Savings & Investment</option>
+                <option>Shopping</option>
+                <option>Education & Learning</option>
+                <option>Miscellaneous</option>
+            </select>
+
+            <label for="amount">Amount ($):</label>
+            <input type="number" id="amount" value="50" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" rows="3">Lunch at a restaurant</textarea>
+
+            <button type="submit">Update Expense</button>
+        </form>
+        <a href="list.html" class="btn">Back to Expenses</a>
+    </div>
+</body>
+</html>
